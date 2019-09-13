@@ -22,7 +22,7 @@ public class BiggestPrimeNumber {
 
 	private static void printPrime() {
 		BigInteger i;
-		for (i = BigInteger.valueOf(2);; i = i.add(BigInteger.ONE)) {
+		for (i = BigInteger.valueOf((2 ^ 32) ^ Integer.MAX_VALUE);; i = i.add(BigInteger.ONE)) {
 			if (isPrime(i))
 				System.out.println(i);
 		}

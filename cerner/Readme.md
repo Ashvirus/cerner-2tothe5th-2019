@@ -1,1 +1,1 @@
-This class generates the biggest prime supported by the language.
+This class generates the biggest prime number supported by the language.

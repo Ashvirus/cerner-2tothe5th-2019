@@ -1,0 +1,32 @@
+%cerner_2^5_2019
+W={ 'Aggressive',	 'baggage' ;
+'Armchair critic',	 'bladder'; 
+'Big-headed',	 'boar-pig'; 
+'Bossy',	 'bugbear' ;
+'Busy body',	 'bum-bailey'; 
+'Clingy',	 'death-token' ;
+'Couch potato',	 'dewberry' ;
+'Cynical',	 'flap-dragon' ;
+'Full of hot air',	 'flirt-gill' ;
+'goody two shoes',	 'foot-licker'; 
+'Grumpy',	 'giglet' ;
+'Impulsive',	 'harpy' ;
+'Indecisive',	 'hedge-pig' ;
+'Know it all',	 'horn-beast' ;
+'Materialistic',	 'hugger-mugger'; 
+'Obnoxious',	 'maggot-pie' ;
+'Pain in the neck',	 'malt-worm'; 
+'Picky',	 'measle' ;
+'Tactless',	 'moldwarp' ;
+'Thoughtless',	 'mumble-news'; 
+'Wet Blanket', 	 'nut-hook' ;
+'Party Pooper',	 'pigeon-egg'; 
+'Spoilsport', 	 'pignut' ;
+ 'Killjoy', 	 'skainsmate' ;
+'puking',	 'varlot' ;
+'venomed',	 'vassal'; 
+'bootless',	 'whey-face'; 
+'danking',	 'wagtail' };
+r = randi(size(W,1),1,2) ;
+S = ['Name:  ' W{r(1),1} ' ' W{r(2),2} ' '] ;
+disp([' ' S])

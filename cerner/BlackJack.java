@@ -11,8 +11,8 @@ public class BlackJack {
 			System.out.println("Please Enter 0 to CLOSE the deal or just press anything");
 			Scanner input = new Scanner(System.in);
 			int exit = input.nextInt();
-			if (exit == 0) {
-				System.out.println(score1 > score2 ? "You Win!!!" : "Dealer Won :(");
+			if (exit == 0 || score1>21) {
+				System.out.println(score1 > score2 && score1<22 ? score1==score2? "It's a draw": "You Win!!!" : "Dealer Won :(");
 				break;
 			}
 			int d1 = rand.nextInt(10) + 4;

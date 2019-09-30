@@ -8,7 +8,7 @@ public class BlackJack {
 		Random rand = new Random();
 		int score1 = 0, score2 = 0;
 		while (true) {
-			System.out.println("Please Enter 0 to CLOSE the deal or just press anything");
+			System.out.println("Please Enter 0 to CLOSE the deal or 1 to play");
 			Scanner input = new Scanner(System.in);
 			int exit = input.nextInt();
 			if (exit == 0 || score1>21) {
@@ -23,7 +23,7 @@ public class BlackJack {
 				score1 += 10;
 			else
 				score1 += Integer.parseInt(arr1[n1]);
-			if (score2 < 18)
+			if (score2+d1 < 22)
 				score2 += d1;
 			System.out.println("Your current score is: " + score1);
 			System.out.println("Dealer score is: " + score2);
